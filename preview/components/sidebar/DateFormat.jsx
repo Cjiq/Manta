@@ -39,6 +39,9 @@ function DateFormat({ t, dateFormat, handleInputChange, language, UILang }) {
         <option value="DD/MM/YY">
           {moment(Date.now()).lang(language).format('DD/MM/YY')} (DD/MM/YY)
         </option>
+        <option value="YYYY-MM-DD">
+          {moment(Date.now()).lang(language).format('YYYY-MM-DD')} (YYYY-MM-DD)
+        </option>
       </select>
     </Section>
   );
