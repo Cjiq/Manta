@@ -10,7 +10,7 @@ import styled from 'styled-components';
 import { Part, Row, Field } from '../shared/Part';
 
 export function RecipientForm({ t, formData, updateRecipientForm }) {
-  const { fullname, company, email, phone } = formData;
+  const { fullname, company, email, phone, address, zipAndCountry } = formData;
   return (
     <Part>
       <Row>
@@ -49,6 +49,26 @@ export function RecipientForm({ t, formData, updateRecipientForm }) {
             name="phone"
             type="text"
             value={phone || ''}
+            onChange={updateRecipientForm}
+          />
+        </Field>
+      </Row>
+      <Row>
+        <Field>
+          <label className="itemLabel">{t('common:fields:address')} *</label>
+          <input
+            name="address"
+            type="text"
+            value={address || ''}
+            onChange={updateRecipientForm}
+          />
+        </Field>
+        <Field>
+          <label className="itemLabel">{t('common:fields:zipAndCountry')}</label>
+          <input
+            name="zipAndCountry"
+            type="text"
+            value={zipAndCountry || ''}
             onChange={updateRecipientForm}
           />
         </Field>

@@ -31,6 +31,7 @@
     "created": "Created",
     "due": "Due",
     "invoice": "Invoice",
+    "invoiceID": "#",
     "itemDescription": "Item Description",
     "notice": "Notice",
     "order": "No",

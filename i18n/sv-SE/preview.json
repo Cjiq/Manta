@@ -31,6 +31,7 @@
     "created": "Skapad",
     "due": "Förfallodatum",
     "invoice": "Faktura",
+    "invoiceID": "Fakturanummer",
     "itemDescription": "Beskrivning",
     "notice": "Notis",
     "order": "Nr",

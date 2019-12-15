@@ -72,8 +72,8 @@ function Header({ t, invoice, profile, configs }) {
           <h4>{profile.company}</h4>
           <p>{profile.fullname}</p>
           <p>{profile.address}</p>
-          <p>{profile.email}</p>
-          <p>{profile.phone}</p>
+          <p>{profile.zipAndCountry}</p>
+          <p>{profile.phone}, {profile.email}</p>
           { tax && <p>{t('form:fields:tax:id')}: { tax.tin }</p> }
         </Company>
 
@@ -82,8 +82,9 @@ function Header({ t, invoice, profile, configs }) {
             <h4>{t('preview:common:billedTo', { lng: language })}</h4>
             <p>{recipient.company}</p>
             <p>{recipient.fullname}</p>
-            <p>{recipient.email}</p>
-            <p>{recipient.phone}</p>
+            <p>{recipient.address}</p>
+            <p>{recipient.zipAndCountry}</p>
+            <p>{recipient.phone}, {recipient.email}</p>
           </Recipient>
         )}
       </LeftColumn>
@@ -95,7 +96,7 @@ function Header({ t, invoice, profile, configs }) {
           {t('preview:common:invoice', { lng: language })}
         </Heading>
         <h4>
-          #
+          {t('preview:common:invoiceID', { lng: language })}:{' '}
           {invoice.invoiceID
             ? invoice.invoiceID
             : truncate(invoice._id, {

@@ -56,7 +56,7 @@ function Header({ t, invoice, profile, configs }) {
           {t('preview:common:invoice', {lng: language})}
         </Heading>
         <h4 className="label">
-          # {' '}
+          {t('preview:common:invoiceID', { lng: language })}:{' '}
           { invoice.invoiceID
             ? invoice.invoiceID
             : truncate(invoice._id, {

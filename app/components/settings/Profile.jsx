@@ -86,7 +86,19 @@ class Profile extends Component {
               onChange={this.handleInputChange}
             />
           </div>
+          <div className="pageItem col-md-6">
+            <label className="itemLabel">{t('common:fields:zipAndCountry')}</label>
+            <input
+              name="zipAndCountry"
+              type="text"
+              value={this.state.zipAndCountry}
+              onChange={this.handleInputChange}
+            />
+          </div>
 
+        </div>
+
+        <div className="row">
           <div className="pageItem col-md-6">
             <label className="itemLabel">{t('common:fields:email')}</label>
             <input
@@ -96,9 +108,6 @@ class Profile extends Component {
               onChange={this.handleInputChange}
             />
           </div>
-        </div>
-
-        <div className="row">
           <div className="pageItem col-md-6">
             <label className="itemLabel">{t('common:fields:phone')}</label>
             <input
@@ -108,8 +117,10 @@ class Profile extends Component {
               onChange={this.handleInputChange}
             />
           </div>
+        </div>
 
-          <div className="pageItem col-md-6">
+        <div className="row">
+          <div className="pageItem col-md-5">
             <label className="itemLabel">{t('common:fields:website')}</label>
             <input
               name="website"
@@ -117,6 +128,8 @@ class Profile extends Component {
               value={this.state.website}
               onChange={this.handleInputChange}
             />
+          </div>
+          <div className="pageItem col-md-6">
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@
     "fullname": "Fullständigt namn",
     "company": "Företag",
     "address": "Adress",
+    "zipAndCountry": "Postnummer och land",
     "email": "E-post",
     "phone": "Telefonnummer",
     "website": "Hemsida"
