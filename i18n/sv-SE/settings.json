@@ -30,7 +30,8 @@
       "separator": "Separator",
       "commaDot": "Kommatecken & Punkt",
       "dotComma": "Punkt & Kommatecken",
-      "spaceDot": "Utrymme & Punkt"
+      "spaceDot": "Utrymme & Punkt",
+      "spaceComma": "Utrymme & Kommatecken"
     },
     "openPDFReader": "Öppna PDF efter exportering",
     "language": {
